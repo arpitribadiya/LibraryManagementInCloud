@@ -13,12 +13,20 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post("/checksum", function(req,res,next){
   var val = req.body.file;
-  if(val===null || val==="")
+  if(val===null)
   {
     res.json(
       {
         file: null,
         error: 'Invalid JSON input.'
+      })
+  }
+  else if(val==="")
+  {
+    res.json(
+      {
+        file: "",
+        error: 'File not found.'
       })
   }
   else{
