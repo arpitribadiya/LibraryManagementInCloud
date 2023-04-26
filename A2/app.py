@@ -7,8 +7,8 @@ import requests
 
 app = Flask(__name__)
 
-aws_access_key_id = 'AKIAWSATUZV5MXJDWBPO'
-aws_secret_access_key = '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'
+aws_access_key_id = ''
+aws_secret_access_key = ''
 
 s3_bucket_name = 'arpitcloudboto3bucket'
 s3_file_key = 'arpit1998'

@@ -10,8 +10,8 @@ import base64
 
 app = Flask(__name__)
 
-aws_access_key_id = 'AKIAWSATUZV5MXJDWBPO'
-aws_secret_access_key = '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'
+aws_access_key_id = ''
+aws_secret_access_key = ''
 
 session = boto3.Session(
     aws_access_key_id=aws_access_key_id,
