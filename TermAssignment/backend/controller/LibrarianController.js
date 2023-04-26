@@ -109,8 +109,8 @@ exports.post_book_add = async (request, response) => {
         books.push(newBook);
 
         const awsconfig = {
-            accessKeyId: 'AKIAQHAP7NSQXO7ZR4P2',
-            secretAccessKey: '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',
+            accessKeyId: '',
+            secretAccessKey: '',
             region: 'us-east-1'
           }
 

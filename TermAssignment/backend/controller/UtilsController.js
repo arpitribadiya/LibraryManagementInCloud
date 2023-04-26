@@ -8,8 +8,8 @@ exports.get_aws_secret = async (request, response) => {
   try {
 
     var client = new AWS.SecretsManager({
-        accessKeyId: 'AKIAQHAP7NSQXO7ZR4P2',
-        secretAccessKey: 'Lhy3cAHbdl4PTCV40z0FsCM5vtbc6dyK9z2H+ksK',
+        accessKeyId: '',
+        secretAccessKey: '',
         region: 'us-east-1' // Your region
     });
     var secret, decodedBinarySecret;
@@ -61,8 +61,8 @@ exports.post_upload_img_to_s3 =  async (request, response) => {
       AWS.config.update({region: 'us-east-1'});
 
       const s3 = new AWS.S3({ credentials:{
-        accessKeyId: 'AKIAQHAP7NSQXO7ZR4P2',
-        secretAccessKey: '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'
+        accessKeyId: '',
+        secretAccessKey: ''
       } 
       });
 
